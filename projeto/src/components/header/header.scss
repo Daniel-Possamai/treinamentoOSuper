@@ -1,11 +1,31 @@
 .header-containter{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
+    max-height: 140px;
+    width: calc(100% - 10px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     align-items: center;
-    color: #000;
+    margin: 0;
+    padding: 5px;
+    box-shadow: 0px 3px 4px 0px #00000071;
+    grid-template-areas: 
+    "svg img empty";
+
+    img{
+        justify-self: center;
+        max-width: 140px;
+        max-height: 70px;
+        grid-area: img;
+    }
+    
     svg{
+        margin-right: auto;
+        color: #fff;
         font-size: 40px;
+        grid-area: svg;
+    }
+
+    .empty{
+        grid-area: empty;
     }
 }
