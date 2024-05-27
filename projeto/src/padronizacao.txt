@@ -1,0 +1,2 @@
+-Componentes do React sempre iniciam com letra maiuscula
+-Variavel camelCase
