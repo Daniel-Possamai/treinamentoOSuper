@@ -53,3 +53,21 @@
     }
 }
 
+.containerFilmes{
+    width: 100%;
+}
+
+
+.filmes{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+
+    img{
+        max-width: 140px;
+        max-height: 340px;
+    }
+}
+

@@ -16,7 +16,7 @@ export default function Home(){
             <FavoriteIcon className="coracao"/>
             <ShareRoundedIcon className="compartilhar"/>
         </div>
-        <div className="containerFilmes trending">
+        <div className="containerFilmes">
             <h2>Trending</h2>
             <div className="filmes">
                 <img src="./images/fullMetalJacket.svg" alt="imagem da capa do filme Inside out" />
