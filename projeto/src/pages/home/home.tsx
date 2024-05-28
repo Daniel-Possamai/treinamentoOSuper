@@ -12,9 +12,9 @@ export default function Home(){
             <p>2018</p>
         </div>
         <div className="btnsFilme">
-            <StarRoundedIcon/>
-            <FavoriteIcon/>
-            <ShareRoundedIcon/>
+            <StarRoundedIcon className="estrela"/>
+            <FavoriteIcon className="coracao"/>
+            <ShareRoundedIcon className="compartilhar"/>
         </div>
         
     </div>
