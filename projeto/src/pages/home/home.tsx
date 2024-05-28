@@ -1,5 +1,6 @@
 import React from "react"
 import "./home.scss"
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function Home(){
     return  <div className="containter-home">
