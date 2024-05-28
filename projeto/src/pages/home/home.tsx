@@ -1,9 +1,9 @@
 import React from "react"
-import Header from "../../components/header/header"
-
+import "./home.scss"
 
 export default function Home(){
     return  <div className="containter-home">
+        <img className="imgDestaque" src="./images/avengersCapa.svg" alt="imagem da capa do filme dos vingadores" />
         
         
     </div>
