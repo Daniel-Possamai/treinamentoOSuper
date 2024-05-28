@@ -16,6 +16,9 @@ export default function Home(){
             <FavoriteIcon className="coracao"/>
             <ShareRoundedIcon className="compartilhar"/>
         </div>
+
+        <img className="line1" src="./images/line1.svg" alt="imagem de uma linha horizontal" />
+
         <div className="containerFilmes">
             <h2>Trending</h2>
             <div className="filmes">
