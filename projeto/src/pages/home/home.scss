@@ -1,15 +1,17 @@
 .containter-home{
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: calc(100% - 2px);
     border: 1px solid red;
     padding: 10px 10px;
     margin: 0;
 
     p{
-        color: white;
+        color: #fff;
     }
+    
 
     .imgDestaque{
         max-width: 160px;
@@ -17,4 +19,23 @@
     }
 }
 
+
+.infoFilme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoFilme h3{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+.infoFilme p{
+    font-size: 12px;
+    color: #929292;
+}
 
