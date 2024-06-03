@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 
+
 export default function Home(){
     return  <div className="containter-home">
         <img className="imgDestaque" src="./images/avengersCapa.svg" alt="imagem da capa do filme dos vingadores" />
@@ -17,8 +18,8 @@ export default function Home(){
             <ShareRoundedIcon className="compartilhar"/>
         </div>
 
-        {/* Como fazer a linha ficar 100% da tela? */}
-        <img className="line1" src="./images/line1.svg" alt="imagem de uma linha horizontal" />
+        
+        <div className="line1"></div>
 
         <div className="containerFilmes">
             <h2>Trending</h2>
@@ -29,7 +30,7 @@ export default function Home(){
         </div>
 
         <div className="containerFilmes">
-            <h2>For You</h2>
+            <h2>For You</h2>    
             <div className="filmes">
                 <img src="./images/qualche.svg" alt="imagem da capa do filme Inside out" />
                 <img src="./images/upon.svg" alt="imagem da capa do filme Full metal jacket" />

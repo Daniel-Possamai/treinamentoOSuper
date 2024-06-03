@@ -1,2 +1,16 @@
 -Componentes do React sempre iniciam com letra maiuscula
 -Variavel camelCase
+
+
+
+****Falta fazer o botao play
+****Colocar o botão profile no header 
+
+
+
+
+
+*Coisas vistas não aplicadas (para aplicar)
+-colocar as classes entre chaves { 'nomeDaClasse' }
+
+-ao clonar repositorio usar npm install
