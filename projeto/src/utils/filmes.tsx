@@ -5,6 +5,15 @@ export interface Filme{
 }
 
 
+export const destaqueFilme = [
+    {
+        title: 'Avengers: Infinity War',
+        year: '2018',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
+    }
+]
+
+
 export const trendingFilmes = [
     {
         title: 'Avengers',
