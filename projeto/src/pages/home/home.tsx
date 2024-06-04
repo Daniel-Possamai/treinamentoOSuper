@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 import Btnplay from "../../components/btnplay/btnplay";
+import Containerfilmes from "../../components/containerfilmes/containerfilmes";
 
 
 export default function Home(){
@@ -22,29 +23,7 @@ export default function Home(){
         
         <div className={ 'line1' }></div>
 
-        <div className={ 'containerFilmes' }>
-            <h2>Trending</h2>
-            <div className={ 'filmes' }>
-                <img src="./images/fullMetalJacket.svg" alt="imagem da capa do filme Inside out" />
-                <img src="./images/insideOut.svg" alt="imagem da capa do filme Full metal jacket" />
-            </div>
-        </div>
+        <Containerfilmes/>
 
-        <div className="containerFilmes">
-            <h2>For You</h2>    
-            <div className="filmes">
-                <img src="./images/qualche.svg" alt="imagem da capa do filme Inside out" />
-                <img src="./images/upon.svg" alt="imagem da capa do filme Full metal jacket" />
-            </div>
-        </div>
-
-        <div className="containerFilmes">
-            <h2>Action</h2>
-            <div className="filmes">
-                <img src="./images/japa.svg" alt="imagem da capa do filme Inside out" />
-                <img src="./images/before.svg" alt="imagem da capa do filme Full metal jacket" />
-            </div>
-        </div>
-        
     </div>
 }

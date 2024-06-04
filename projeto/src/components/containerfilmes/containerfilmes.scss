@@ -1,0 +1,28 @@
+.containerFilmes{
+    margin-bottom: 5px;
+    width: 100%;
+    
+    h2{
+        
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+
+.filmes{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+
+
+    img{
+        max-width: 140px;
+        max-height: 340px;
+        aspect-ratio: 900px / 1200px;
+        border-radius: 10px;
+    }
+}
