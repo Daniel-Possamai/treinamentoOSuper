@@ -9,7 +9,7 @@ export const trendingFilmes = [
     {
         title: 'Avengers',
         year: '2018',
-        image: './images/avengersCapa.svg'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
     },
     {
         title: 'Avengers',
