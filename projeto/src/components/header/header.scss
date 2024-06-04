@@ -9,7 +9,7 @@
     padding: 5px;
     box-shadow: 0px 3px 4px 0px #00000071;
     grid-template-areas: 
-    "svg img empty";
+    "menuIcon img profileIcon";
 
     img{
         justify-self: center;
@@ -18,14 +18,17 @@
         grid-area: img;
     }
     
-    svg{
-        margin-right: auto;
+    .menuIcon{
+        justify-self: left;
         color: #fff;
         font-size: 40px;
-        grid-area: svg;
+        grid-area: menuIcon;
     }
 
-    .empty{
-        grid-area: empty;
+    .profileIcon{
+        justify-self: right;
+        color: #fff;
+        font-size: 40px;
+        grid-area: profileIcon;
     }
 }

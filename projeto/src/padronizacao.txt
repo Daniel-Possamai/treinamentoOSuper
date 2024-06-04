@@ -3,7 +3,7 @@
 
 
 
-****Falta fazer o botao play
+
 ****Colocar o botão profile no header 
 
 
