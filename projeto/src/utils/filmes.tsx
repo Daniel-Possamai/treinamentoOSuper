@@ -1,15 +1,12 @@
-export interface Filme{
-    title: string
-    year: string
-    img: string
-}
+import { Filme } from "../pages/home/home"
 
 
-export const destaqueFilme = [
+
+export const destaqueFilme: Filme[] = [
     {
         title: 'Avengers: Infinity War',
-        year: '2018',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
+        year: 2018,
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
     }
 ]
 
