@@ -13,7 +13,7 @@ export default function Home(){
             <h3>Avengers: Infinity War</h3>
             <p>2018</p>
         </div>
-        <div className="btnsFilme">
+        <div className={ 'btnsFilme' }>
             <StarRoundedIcon className={ 'estrela' }/>
             <FavoriteIcon className={ 'coracao' }/>
             <ShareRoundedIcon className={ 'compartilhar' } />
