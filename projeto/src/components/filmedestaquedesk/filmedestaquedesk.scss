@@ -5,6 +5,9 @@
 }
 
 .infoEPlay{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     color: #fff;
     h3{
         font-size: 26px;
@@ -13,7 +16,7 @@
         color: #929292;
     }
     .descricao{
-        width: 50%;
+        max-width: 40%;
     }
 }
 
