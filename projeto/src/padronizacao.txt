@@ -10,7 +10,7 @@
 
 
 *Coisas vistas não aplicadas (para aplicar)
--colocar as classes entre chaves { 'nomeDaClasse' }
+
 
 -ao clonar repositorio usar npm install
 

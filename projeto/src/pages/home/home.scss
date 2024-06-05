@@ -26,63 +26,7 @@
 }
 
 
-.infoFilme{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.infoFilme h3{
-    font-size: 16px;
-    color: #fff;
-    font-weight: 400;
-}
-
-.infoFilme p{
-    font-size: 12px;
-    color: #929292;
-}
-
-.btnsFilme{
-    display: flex;
-    gap: 10px;
-
-    .estrela{
-        color: #FFE500;
-    }
-    .coracao{
-        color: #C0392B;
-    }
-    .compartilhar{
-        color: #5D9F45;
-    }
-}
-
-.containerFilmes{
-    margin-bottom: 5px;
-    width: 100%;
-    
-    h2{
-        
-        margin-bottom: 5px;
-        font-size: 12px;
-        color: #fff;
-        font-weight: 400;
-    }
-}
 
 
-.filmes{
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: space-around;
 
-
-    img{
-        max-width: 140px;
-        max-height: 340px;
-    }
-}
 
