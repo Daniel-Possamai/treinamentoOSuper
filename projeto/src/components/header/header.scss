@@ -32,3 +32,39 @@
         grid-area: profileIcon;
     }
 }
+
+
+
+
+@media (min-width: 700px){
+    
+
+    .header-containter{
+        grid-template-areas: 
+        "img nav profileIcon";
+        .hiddenDesk{
+            display: none;
+        }
+    
+        img{
+            justify-self: left;
+            max-width: 140px;
+            max-height: 70px;
+            grid-area: img;
+        }
+        
+        Nav{
+            grid-area: nav;
+        }
+    
+        .profileIcon{
+            justify-self: right;
+            color: #fff;
+            font-size: 40px;
+            grid-area: profileIcon;
+        }
+
+        
+    }
+
+}
