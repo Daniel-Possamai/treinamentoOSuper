@@ -41,7 +41,7 @@
 
     .header-containter{
         grid-template-areas: 
-        "img nav profileIcon";
+        "img nav profile";
         .hiddenDesk{
             display: none;
         }
@@ -57,11 +57,8 @@
             grid-area: nav;
         }
     
-        .profileIcon{
-            justify-self: right;
-            color: #fff;
-            font-size: 40px;
-            grid-area: profileIcon;
+        .imgDePerfil{
+            grid-area: profile;
         }
 
         

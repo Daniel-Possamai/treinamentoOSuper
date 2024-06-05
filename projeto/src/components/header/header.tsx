@@ -17,7 +17,7 @@ export default function Header(){
         <img src="./images/logotest.svg" alt="imagem da logo" />
         <Nav/>
         <Profile infos={ infoProfile }/>
-        <AccountCircleIcon className={ 'profileIcon' }/>
+        <AccountCircleIcon className={ 'profileIcon hiddenDesk' }/>
     </div>
 }
 
