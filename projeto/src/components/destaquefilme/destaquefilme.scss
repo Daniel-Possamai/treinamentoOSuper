@@ -54,3 +54,10 @@
         color: #5D9F45;
     }
 }
+
+
+@media (min-width: 700px){
+    .containerDestaqueFilme{
+        display: none;
+    }
+}

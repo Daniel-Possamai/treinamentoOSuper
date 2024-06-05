@@ -10,3 +10,9 @@
     border-radius: 5px;
     background-color: #8D11C8;
 }
+
+@media (min-width: 700px){
+    .btnPlay{
+        display: none;
+    }
+}

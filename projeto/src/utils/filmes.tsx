@@ -12,7 +12,8 @@ export const destaqueFilme: Filme[] = [
     {
         title: 'Avengers: Infinity War',
         year: 2018,
-        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s',
+        description: 'Homem de Ferro, Capitão América, Thor, Hulk e os Vingadores se unem para combater o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a humanidade.'
     }
 ]
 
