@@ -11,18 +11,26 @@
     }
 }
 
-
-.filmes{
-    width: 100%;
+.organizadorFilmes{
     display: flex;
     gap: 10px;
     justify-content: space-around;
 
-
-    img{
-        max-width: 140px;
-        max-height: 340px;
-        aspect-ratio: 900px / 1200px;
-        border-radius: 10px;
+    .filmes{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    
+    
+        img{
+            max-width: 140px;
+            max-height: 340px;
+            aspect-ratio: 900px / 1200px;
+            border-radius: 10px;
+        }
     }
 }
+
+
+
