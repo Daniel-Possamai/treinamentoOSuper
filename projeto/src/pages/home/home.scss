@@ -1,4 +1,5 @@
 .containter-home{
+    overflow-x: hidden;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -24,6 +25,7 @@
         background-color: #606060;
     }
 }
+
 
 
 
