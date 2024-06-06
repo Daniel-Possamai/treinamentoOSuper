@@ -24,13 +24,39 @@
     
     
         img{
-            max-width: 140px;
-            max-height: 340px;
-            aspect-ratio: 900px / 1200px;
+            width: 140px;
+            height: 190px;
             border-radius: 10px;
         }
     }
 }
 
 
+@media (min-width: 700px){
+    .organizadorFilmes{
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    
+        .filmes{
+            flex: 1; // Isso permite que os filmes se ajustem ao espaço disponível
+            
+        
+            img{
+                width: 100%; // Faz a imagem preencher o espaço disponível
+                height: auto; // Mantém a altura proporcional à largura
+                aspect-ratio: 3 / 4; // Define o aspect ratio desejado
+                border-radius: 10px;
+                object-fit: cover; // Garante que a imagem cubra o espaço disponível sem distorcer
+            }
+        }
+    }
+    .containerFilmes{
+        margin-bottom: 10px;
 
+        h2{     
+            margin-bottom: 5px;
+            font-size: 26px;
+        }
+    }
+}
