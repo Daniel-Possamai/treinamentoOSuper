@@ -7,12 +7,23 @@
         display: flex;
         list-style: none;
         gap: 30px;
-        
+
+        li{
+            transition: transform .3s ease;
+        }        
 
         li a{
             color: #fff;
             text-decoration: none;
             text-align: center;
+            transition: text-shadow .3s ease;
+            
+        }
+        li:hover{
+            transform: scale(1.03);
+        }
+        li a:hover{
+            text-shadow: 0 0 6px #fff;
         }
     }
 }
