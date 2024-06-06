@@ -4,6 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
 
 interface propsFilmeDestacado{
     filme: Filme[]
@@ -30,6 +31,38 @@ export default function Filmedestaquedesk(props: propsFilmeDestacado){
                     <div className={ 'btnPlayDesk' }>
                        <PlayArrowIcon/> 
                         <p>Play</p>
+                    </div>
+                </div>
+                <div className="rating">
+                    <div className="containerStar">
+                        <div className="stars">
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star' }/> 
+                        </div>
+                        <p>Direção</p>
+                    </div>
+                    <div className="containerStar">
+                        <div className="stars">
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star' }/>
+                            <StarRateRoundedIcon className={ 'star' }/>
+                        </div>
+                        <p>Dublagem</p>
+                    </div>
+                    <div className="containerStar">
+                        <div className="stars">
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                            <StarRateRoundedIcon className={ 'star active' }/>
+                        </div>
+                        <p>Elenco</p>
                     </div>
                 </div>
             </div> )}
