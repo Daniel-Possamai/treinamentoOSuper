@@ -73,6 +73,16 @@ export const forYouFilmes: Filme[] = [
         title: 'Ghostbusters: Apocalipse de Gelo',
         year: 2024,
         img: 'https://br.web.img3.acsta.net/pictures/23/12/19/17/34/2523057.jpg'
+    },
+    {
+        title: 'Godzilla Minus One',
+        year: 2023,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9XSOyim1pivuSHQqlrDj5gj2J5w.jpg'
+    },
+    {
+        title: 'Coringa',
+        year: 2019,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xLxgVxFWvb9hhUyCDDXxRPPnFck.jpg'
     }
 ]
 
@@ -96,5 +106,15 @@ export const action: Filme[] = [
         title: 'Gladiador',
         year: 2000,
         img: 'https://upload.wikimedia.org/wikipedia/pt/4/44/GladiadorPoster.jpg'
+    },
+    {
+        title: 'El Camino: Um Filme de Breaking Bad',
+        year: 2019,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/84M1AhZI6k1ZhHtZtpJaCZffk1D.jpg'
+    },
+    {
+        title: 'O Poço',
+        year: 2019,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kY0ET33EoiJhjaPCzzvywCDqP6b.jpg'
     }
 ]

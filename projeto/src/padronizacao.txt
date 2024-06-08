@@ -5,13 +5,15 @@
 
 --------------
 
-quando usar o max-width
 
-coloca classe css nos Componentes
+descomponetizar um dos destaques filme colocar tudo só em um
 
-descomponetizar um dos destaques colocar tudo só em um
+usar api do themoviedb.org na branch api para carregar as listas de filmes
 
 teste
+
+
+
 
 
 
