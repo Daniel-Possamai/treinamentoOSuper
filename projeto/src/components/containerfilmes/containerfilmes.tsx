@@ -14,8 +14,12 @@ export default function Containerfilmes(props: propsContainerFilmes){
 
     useEffect(() => {
         function handleResize(){
-            if (window.matchMedia("(min-width: 700px)").matches){
+            if (window.matchMedia("(min-width: 1440px)").matches){
+                setNumFilmes(6)
+
+            }else if (window.matchMedia("(min-width: 700px)").matches){
                 setNumFilmes(4)
+
             }else{
                 setNumFilmes(2)
             }

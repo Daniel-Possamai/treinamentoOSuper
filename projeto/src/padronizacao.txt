@@ -5,6 +5,11 @@
 
 --------------
 
+quando usar o max-width
+
+coloca classe css nos Componentes
+
+descomponetizar um dos destaques colocar tudo só em um
 
 
 
