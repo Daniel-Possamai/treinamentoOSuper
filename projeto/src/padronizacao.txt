@@ -18,6 +18,8 @@ criar imagem em destaque aleatoria, e colocar um loading para ela
 
 creating rest api (https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/)
 
+baixar postgree
+baixar dbeaver
 
 
 
