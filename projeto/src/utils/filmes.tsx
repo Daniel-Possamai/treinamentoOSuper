@@ -40,6 +40,16 @@ export const trendingFilmes: Filme[] = [
         year: 2023,
         img: 'https://br.web.img3.acsta.net/img/5d/82/5d82cde1e669371b71e0d7370a73ce94.png'
     },
+    {
+        title: 'Sob as Águas do Sena',
+        year: 2024,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/njsyAXtUcPjLCjOfGvtNLH4DHL2.jpg'
+    },
+    {
+        title: 'Sweet Tooth',
+        year: 2021,
+        img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cvrzHJ0HDAKjyYla2WfgDJ3f3IN.jpg'
+    }
 
 ]
 
