@@ -2,5 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
 }
+
+.spinner > div {
+    color: #8D11C8;
+    width: 220px;
+}
+
+@media (max-width: 700px){
+    .spinner > div {
+        width: 120px;
+    }
+}
+

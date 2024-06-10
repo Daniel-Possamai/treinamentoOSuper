@@ -5,7 +5,7 @@ export default function Loaderall(){
     return (
         <div className="spinner">
             <div>
-                <TailSpin />
+                <TailSpin color="currentColor" width="100%" height="100%"/>
             </div>
         </div>
     )   
