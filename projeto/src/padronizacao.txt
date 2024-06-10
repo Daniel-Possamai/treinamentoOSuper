@@ -12,7 +12,7 @@ usar api do themoviedb.org na branch api para carregar as listas de filmes
 
 teste
 
-fragment não alterna nada na estrutura
+fragment não alterna nada na estrutura (FEITO)
 
 criar imagem em destaque aleatoria, e colocar um loading para ela (FEITO)
 
@@ -34,47 +34,3 @@ baixar dbeaver
 -ao clonar repositorio usar npm install
 
 
-prompt
-
-Tenho um app em react, tenho um container em tsx que mostra o nome do filme a capa e o ano de lançamento, mas tenho que ir la e colocar manualmente, quero passar essas propiedades dinamicamente com o meu array de filmes contendo objetos com o seguintes atributos, Nome, ano e imagem de capa
-
-meu tsx 
-
-<img className={ 'imgDestaque' } src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s" alt="imagem da capa do filme dos vingadores" />
-        <div className={ 'infoFilme' }>
-            <h3>Avengers: Infinity War</h3>
-            <p>2018</p>
-        </div>
-
-
-meu tsx de com o array de filmes
-
-export interface Filme{
-    title: string
-    year: string
-    img: string
-}
-
-
-export const trendingFilmes = [
-    {
-        title: 'Avengers',
-        year: '2018',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTgrMzKEsApaDEI3IUlhVrjp-1PBHEm3WJA&s'
-    },
-    {
-        title: 'Avengers',
-        year: '2018',
-        image: './images/avengersCapa.svg'
-    },
-    {
-        title: 'Avengers',
-        year: '2018',
-        image: './images/avengersCapa.svg'
-    },
-    {
-        title: 'Avengers',
-        year: '2018',
-        image: './images/avengersCapa.svg'
-    },
-]
