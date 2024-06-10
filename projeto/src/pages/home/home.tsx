@@ -3,8 +3,7 @@ import "./home.scss"
 import Btnplay from "../../components/btnplay/btnplay";
 import Containerfilmes from "../../components/containerfilmes/containerfilmes";
 import Destaquefilme from "../../components/destaquefilme/destaquefilme";
-import Filmedestaquedesk from "../../components/filmedestaquedesk/filmedestaquedesk";
-import { action, destaqueFilme, forYouFilmes, trendingFilmes } from "../../utils/filmes";
+import { action, forYouFilmes, trendingFilmes } from "../../utils/filmes";
 
 export interface Filme{
     title: string
@@ -16,7 +15,7 @@ export interface Filme{
 
 export default function Home(){
     return  <div className={ 'containter-home' }>
-        <Destaquefilme filmes={ destaqueFilme }/>
+        <Destaquefilme filmes={ trendingFilmes }/>
         <Btnplay/>
         
         
