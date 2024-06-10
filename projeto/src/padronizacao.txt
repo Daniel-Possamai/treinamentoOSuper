@@ -6,7 +6,7 @@
 --------------
 
 
-descomponetizar um dos destaques filme colocar tudo só em um
+descomponetizar um dos destaques filme colocar tudo só em um (FEITO)
 
 usar api do themoviedb.org na branch api para carregar as listas de filmes
 
@@ -14,7 +14,7 @@ teste
 
 fragment não alterna nada na estrutura
 
-criar imagem em destaque aleatoria, e colocar um loading para ela 
+criar imagem em destaque aleatoria, e colocar um loading para ela (FEITO)
 
 creating rest api (https://blog.postman.com/how-to-create-a-rest-api-with-node-js-and-express/)
 
