@@ -18,7 +18,7 @@ export default function Home(){
     return  <div className={ 'containter-home' }>
         <Destaquefilme filmes={ destaqueFilme }/>
         <Btnplay/>
-        <Filmedestaquedesk filme={ destaqueFilme }/>
+        
         
         <div className={ 'line1' }></div>
 
