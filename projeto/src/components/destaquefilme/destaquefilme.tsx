@@ -12,17 +12,18 @@ interface propsFilmeDestacado{
 }
 
 export default function Destaquefilme(props: propsFilmeDestacado){
-
     const { filmes } = props
-    const filmeAleatorio = filmes[Math.floor(Math.random() * filmes.length)]
+    if (!filmes || filmes.length === 0) return null;
+
+    const filmeAleatorio = filmes[Math.floor(Math.random() * filmes.length)];
 
     return (
         <div className={ 'containerDestaqueFilme' }>
             <div className="filmeDestacado">
-                    <img className={ 'imgDestaque' } src= { filmeAleatorio.img} alt= {`Imagem de capa do filme ${ filmeAleatorio.title }`} />
+                    <img className={ 'imgDestaque' } src={`https://image.tmdb.org/t/p/original${filmeAleatorio.poster_path}`} alt={`Imagem de capa do filme ${filmeAleatorio.title}`} />
                 <div className={ 'infoFilme' }>
                     <h3>{ filmeAleatorio.title }</h3>
-                    <p>{ filmeAleatorio.year }</p>
+                    <p>{ new Date(filmeAleatorio.release_date).getFullYear() }</p>
                 </div>
             </div>
             
@@ -38,7 +39,7 @@ export default function Destaquefilme(props: propsFilmeDestacado){
             <div className="containerFilmeestaquedesk">
                     <div className="filmeDestak">
                         <div className="imgDestak">
-                            <img src={filmeAleatorio.img} alt={`Imagem de capa do filme ${filmeAleatorio.title}`} />
+                            <img src={`https://image.tmdb.org/t/p/original${filmeAleatorio.poster_path}`} alt={`Imagem de capa do filme ${filmeAleatorio.title}`} />
                             <div className={'btnsFilme'}>
                                 <StarRoundedIcon className={'estrela'} />
                                 <FavoriteIcon className={'coracao'} />
@@ -47,8 +48,8 @@ export default function Destaquefilme(props: propsFilmeDestacado){
                         </div>
                         <div className="infoEPlay">
                             <h3> {filmeAleatorio.title} </h3>
-                            <p className={'ano'}> {filmeAleatorio.year} </p>
-                            <p className={'descricao'}> {filmeAleatorio.description} </p>
+                            <p className={'ano'}> { new Date(filmeAleatorio.release_date).getFullYear() } </p>
+                            <p className={'descricao'}> {filmeAleatorio.overview} </p>
                             <div className={'btnPlayDesk'}>
                                 <PlayArrowIcon />
                                 <p>Play</p>
