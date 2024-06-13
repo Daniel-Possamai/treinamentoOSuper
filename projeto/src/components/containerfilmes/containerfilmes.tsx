@@ -39,7 +39,7 @@ export default function Containerfilmes(props: propsContainerFilmes){
         <div className="organizadorFilmes">
             { filmes.slice(0, numFilmes).map((filme, index) => 
                 <div key={index} className={ 'filmes' }>
-                    <img src={ filme.img } alt= {`Imagem da capa do filme ${filme.title}`} />
+                    <img src={`https://image.tmdb.org/t/p/original${filme.poster_path}`} alt={`Imagem da capa do filme ${filme.title}`} />
                 </div>)} 
         </div>
         

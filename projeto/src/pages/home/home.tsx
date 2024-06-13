@@ -23,8 +23,8 @@ export interface Filme {
 export default function Home(){
     const [FilmeEmDestaque, setFilmeEmDestaque] = useState<Filme[]>([]);
     const [trendingMovies, setTrendingMovies] = useState([]);
-    const [forYouMovies, setForYouMovies] = useState([]);
-    const [actionMovies, setActionMovies] = useState([]);
+    const [dramaMovies, setDramaMovies] = useState([]);
+    const [comedyMovies, setComedyMovies] = useState([]);
     const [ isLoad, setLoad ] = useState(true)
 
     useEffect(() => {
@@ -37,6 +37,28 @@ export default function Home(){
                     const filmeAleatorio = filmeEmDestaqueResposta.data.results[Math.floor(Math.random() * filmeEmDestaqueResposta.data.results.length)];
                     setFilmeEmDestaque([filmeAleatorio]);
                 }
+
+                const trendingMoviesResposta = await axios.get(`${BASE_URL}/movie/popular`, { params: { api_key: API_KEY } });
+                setTrendingMovies(trendingMoviesResposta.data.results);
+
+                const comedyMoviesResposta = await axios.get(`${BASE_URL}/discover/movie`, {
+                    params: {
+                        api_key: API_KEY,
+                        with_genres: '35'
+                    }
+                });
+                setComedyMovies(comedyMoviesResposta.data.results);
+
+                const dramaMoviesResposta = await axios.get(`${BASE_URL}/discover/movie`, {
+                    params: {
+                        api_key: API_KEY,
+                        with_genres: '12'
+                    }
+                })
+                setDramaMovies(dramaMoviesResposta.data.results)
+
+
+
                 setTimeout(() => {
                     setLoad(false);
                 }, 2000);
@@ -58,9 +80,9 @@ export default function Home(){
         
         <div className={ 'line1' }></div>
 
-        {/* <Containerfilmes filmes={ trendingFilmes } title={ 'Trending' }/>
-        <Containerfilmes filmes={ forYouFilmes } title={ 'For You' }/>
-        <Containerfilmes filmes={ action } title={ 'Action' }/> */}
+        <Containerfilmes filmes={ trendingMovies } title={ 'Trending' }/>
+        <Containerfilmes filmes={ dramaMovies } title={ 'Drama' }/>
+        <Containerfilmes filmes={ comedyMovies } title={ 'Comédia' }/>
         </Fragment>}
         
     </div>
