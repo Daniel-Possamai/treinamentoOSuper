@@ -61,7 +61,7 @@ export default function Home(){
 
                 setTimeout(() => {
                     setLoad(false);
-                }, 2000);
+                }, 1500);
             } catch (error) {
                 console.error("Erro ao buscar filmes", error);
                 setLoad(false);
