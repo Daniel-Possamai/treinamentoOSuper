@@ -11,6 +11,8 @@ interface propsContainerFilmes {
 export default function Containerfilmes(props: propsContainerFilmes){
     const { filmes, title } = props 
     const [ numFilmes, setNumFilmes ] = useState(2)
+    const maxIndex = filmes.length - numFilmes;
+    const sliceAleatorio = Math.floor(Math.random() * maxIndex);
 
     useEffect(() => {
         function handleResize(){
@@ -30,14 +32,14 @@ export default function Containerfilmes(props: propsContainerFilmes){
 
         return () => window.removeEventListener('resize', handleResize)
 
-    })
+    }, [numFilmes])
 
 
 
     return (<div className={ 'containerFilmes' }>
         <h2>{ title }</h2>
         <div className="organizadorFilmes">
-            { filmes.slice(0, numFilmes).map((filme, index) => 
+            { filmes.slice(sliceAleatorio, sliceAleatorio + numFilmes).map((filme, index) => 
                 <div key={index} className={ 'filmes' }>
                     <img src={`https://image.tmdb.org/t/p/original${filme.poster_path}`} alt={`Imagem da capa do filme ${filme.title}`} />
                 </div>)} 
