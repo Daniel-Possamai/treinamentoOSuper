@@ -78,6 +78,7 @@ export default function Home(){
         
         
         
+        
         <div className={ 'line1' }></div>
 
         <Containerfilmes filmes={ trendingMovies } title={ 'Trending' }/>
