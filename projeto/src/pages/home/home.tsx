@@ -31,8 +31,7 @@ export default function Home(){
     useEffect(() => {
         const fetchMovies = async () => {
             setLoad(true)
-            try {
-                // Supondo que você queira pegar um filme popular aleatório
+            try { 
                 const filmeEmDestaqueResposta = await axios.get(`${BASE_URL}/movie/popular`, { params: { api_key: API_KEY, language: 'pt-BR' } });
                 if (filmeEmDestaqueResposta.data.results.length > 0) {
                     const filmeAleatorio = filmeEmDestaqueResposta.data.results[Math.floor(Math.random() * filmeEmDestaqueResposta.data.results.length)];
