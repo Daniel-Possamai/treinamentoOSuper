@@ -11,6 +11,17 @@
     background-color: #8D11C8;
 }
 
+.btnPlayDesk{
+    transition: background-color .3s ease;
+}
+
+.btnPlayDesk:hover{
+    cursor: pointer;
+    background-color: #a710ee;
+}
+
+
+
 @media (min-width: 700px){
     .btnPlay{
         display: none;
