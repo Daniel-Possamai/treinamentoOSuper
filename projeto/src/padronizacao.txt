@@ -8,9 +8,7 @@
 
 descomponetizar um dos destaques filme colocar tudo só em um (FEITO)
 
-usar api do themoviedb.org na branch api para carregar as listas de filmes
-
-teste
+usar api do themoviedb.org na branch api para carregar as listas de filmes (FEITO)
 
 fragment não alterna nada na estrutura (FEITO)
 
@@ -20,8 +18,8 @@ creating rest api (https://blog.postman.com/how-to-create-a-rest-api-with-node-j
 
 modal no icone 3 pontos
 
-baixar postgree
-baixar dbeaver
+baixar postgree (FEITO)
+baixar dbeaver (FEITO)
 
 
 
