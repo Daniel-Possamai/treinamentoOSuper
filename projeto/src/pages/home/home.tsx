@@ -83,7 +83,7 @@ export default function Home(){
 
     return  <div className={ 'containter-home' }>
         { isLoad ?  <Loaderall/> : <Fragment>
-        <Destaquefilme filmes={ FilmeEmDestaque }/>
+        <Destaquefilme filmes={ FilmeEmDestaque } trailer={ trailerUrl }/>
         <Btnplay trailer={ trailerUrl }/>
 
         

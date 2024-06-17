@@ -13,7 +13,6 @@ export default function Btnplay( props: trailerFilme ){
 
     const { trailer } = props
 
-    console.log(trailer)
     
     const handleClick = () => {
         window.open(trailer, '_blank');
@@ -22,6 +21,6 @@ export default function Btnplay( props: trailerFilme ){
 
     return <div className={ 'btnPlay' } onClick={ handleClick }>
         <PlayArrowIcon/> 
-        <p>Play</p>
+        <p>Play Trailer</p>
     </div>
 }

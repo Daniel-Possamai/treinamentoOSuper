@@ -9,6 +9,7 @@ import { Filme } from "../../pages/home/home";
 
 interface propsFilmeDestacado{
     filmes: Filme[]
+    trailer: string
 }
 
 export default function Destaquefilme(props: propsFilmeDestacado){
@@ -16,6 +17,12 @@ export default function Destaquefilme(props: propsFilmeDestacado){
     if (!filmes || filmes.length === 0) return null;
 
     const filmeAleatorio = filmes[Math.floor(Math.random() * filmes.length)];
+
+    const { trailer } = props
+
+    const handleClick = () => {
+        window.open(trailer, '_blank');
+    };
 
     return (
         <div className={ 'containerDestaqueFilme' }>
@@ -50,9 +57,9 @@ export default function Destaquefilme(props: propsFilmeDestacado){
                             <h3> {filmeAleatorio.title} </h3>
                             <p className={'ano'}> { new Date(filmeAleatorio.release_date).getFullYear() } </p>
                             <p className={'descricao'}> {filmeAleatorio.overview} </p>
-                            <div className={'btnPlayDesk'}>
+                            <div className={'btnPlayDesk'} onClick={ handleClick }>
                                 <PlayArrowIcon />
-                                <p>Play</p>
+                                <p>Play Trailer</p>
                             </div>
                         </div>
                         <div className="rating">
