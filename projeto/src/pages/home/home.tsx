@@ -17,12 +17,14 @@ export interface Filme {
     release_date: string;
     poster_path: string;
     overview?: string;
+    trailer?: string;
 }
 
 
 
 export default function Home(){
     const [FilmeEmDestaque, setFilmeEmDestaque] = useState<Filme[]>([]);
+    const [trailerUrl, setTrailerUrl] = useState('');
     const [trendingMovies, setTrendingMovies] = useState([]);
     const [dramaMovies, setDramaMovies] = useState([]);
     const [comedyMovies, setComedyMovies] = useState([]);
@@ -35,6 +37,13 @@ export default function Home(){
                 const filmeEmDestaqueResposta = await axios.get(`${BASE_URL}/movie/popular`, { params: { api_key: API_KEY, language: 'pt-BR' } });
                 if (filmeEmDestaqueResposta.data.results.length > 0) {
                     const filmeAleatorio = filmeEmDestaqueResposta.data.results[Math.floor(Math.random() * filmeEmDestaqueResposta.data.results.length)];
+                    
+                    const trailerResponse = await axios.get(`${BASE_URL}/movie/${filmeAleatorio.id}/videos`, { params: { api_key: API_KEY, language: 'pt-BR' } });
+                    const trailerData = trailerResponse.data.results.find((video: { type: string; }) => video.type === 'Trailer');
+                    if (trailerData) {
+                        setTrailerUrl(`https://www.youtube.com/watch?v=${trailerData.key}`);
+                    }
+
                     setFilmeEmDestaque([filmeAleatorio]);
                 }
 
@@ -74,7 +83,7 @@ export default function Home(){
     return  <div className={ 'containter-home' }>
         { isLoad ?  <Loaderall/> : <Fragment>
         <Destaquefilme filmes={ FilmeEmDestaque }/>
-        <Btnplay/>
+        <Btnplay filmes= { FilmeEmDestaque }/>
 
         
         
