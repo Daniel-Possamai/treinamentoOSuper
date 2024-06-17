@@ -1,21 +1,26 @@
+import React from "react";
 import { Filme } from "../../pages/home/home";
 import "./btnplay.scss"
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
-interface propsFilmeDestacado{
-    filmes: Filme[]
+
+interface trailerFilme{
+    trailer: string
 }
 
 
-export default function Btnplay(props: propsFilmeDestacado){
+export default function Btnplay( props: trailerFilme ){
 
-    // const { filme } = props
+    const { trailer } = props
 
-    const handClick = () => {
-        window.open('https://youtube.com', '_blank');
+    console.log(trailer)
+    
+    const handleClick = () => {
+        window.open(trailer, '_blank');
     }
 
-    return <div className={ 'btnPlay' } onClick={ handClick }>
+
+    return <div className={ 'btnPlay' } onClick={ handleClick }>
         <PlayArrowIcon/> 
         <p>Play</p>
     </div>

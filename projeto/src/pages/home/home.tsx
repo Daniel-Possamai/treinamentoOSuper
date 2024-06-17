@@ -8,6 +8,7 @@ import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import { Language } from "@mui/icons-material";
 
+
 const API_KEY = 'bc46ceb0eb6abe76c6ec4ba9bb8d9103'
 const BASE_URL = 'https://api.themoviedb.org/3'
 
@@ -83,7 +84,7 @@ export default function Home(){
     return  <div className={ 'containter-home' }>
         { isLoad ?  <Loaderall/> : <Fragment>
         <Destaquefilme filmes={ FilmeEmDestaque }/>
-        <Btnplay filmes= { FilmeEmDestaque }/>
+        <Btnplay trailer={ trailerUrl }/>
 
         
         
