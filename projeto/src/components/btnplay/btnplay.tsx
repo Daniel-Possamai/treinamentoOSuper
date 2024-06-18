@@ -1,7 +1,7 @@
-import React from "react";
-import { Filme } from "../../pages/home/home";
 import "./btnplay.scss"
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import React from 'react';
+
 
 
 interface trailerFilme{
