@@ -6,22 +6,22 @@ import Destaquefilme from "../../components/destaquefilme/destaquefilme";
 import Loaderall from "../../components/loaderall/loaderall";
 import { useQuery } from "@apollo/client";
 import { homeQuery } from "./queries";
+import { HomeQuery } from "../../types/HomeQuery";
 
 
 
 
 export default function Home(){
 
-    const { data, loading, error } = useQuery(homeQuery)
+    const { data, loading, error } = useQuery<HomeQuery>(homeQuery)
     console.log(data)
 
     if (loading || !data || error) return <Loaderall/>
 
     const movies = data.movies
     console.log(movies)    
-
-
-
+    
+    
 
     return  <div className={ 'containter-home' }>
 

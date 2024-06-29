@@ -35,13 +35,13 @@
   "graphql": {
     "schema": "http://localhost:5000",
     "documents": "**/*.{graphql,js,ts,jsx,tsx}"
-},
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "generate": "npm generate:schema && npm generate:types",
+    "generate": "npm run generate:schema && npm run generate:types",
     "generate:schema": "apollo schema:download --endpoint=http://localhost:5000/graphql/ graphql-schema.json",
     "generate:types": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --no-addTypename --globalTypesFile=src/types/graphql-global-types.ts --outputFlat src/types"
   },

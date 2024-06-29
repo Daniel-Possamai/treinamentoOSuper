@@ -1,9 +1,10 @@
+import { HomeQuery_movies } from "../../types/HomeQuery";
 import "./containerfilmes.scss"
 import React, { useState, useEffect } from 'react';
  
 
 interface propsContainerFilmes {
-    filmes: any[]
+    filmes: HomeQuery_movies[]
     title: string
 }
 
@@ -35,10 +36,10 @@ export default function Containerfilmes(props: propsContainerFilmes){
 
     return (<div className={ 'containerFilmes' }>
         <h2>{ title }</h2>
-        <div className="organizadorFilmes">
+        <div className="organizadorFilmes"> 
             { filmes.slice(0, numFilmes).map((filme, index) => 
                 <div key={index} className={ 'filmes' }>
-                    <img src={ filme.img } alt= {`Imagem da capa do filme ${filme.title}`} />
+                    <img src={ filme.image?.url } alt= {`Imagem da capa do filme ${filme.title}`} />
                 </div>)} 
         </div>
         
