@@ -43,7 +43,7 @@
     "eject": "react-scripts eject",
     "generate": "npm run generate:schema && npm run generate:types",
     "generate:schema": "apollo schema:download --endpoint=http://localhost:5000/graphql/ graphql-schema.json",
-    "generate:types": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --no-addTypename --globalTypesFile=src/types/graphql-global-types.ts --outputFlat src/types"
+    "generate:types": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --no-addTypename --globalTypesFile=src/types/graphql-global-types.d.ts --outputFlat src/types"
   },
   "eslintConfig": {
     "extends": [
