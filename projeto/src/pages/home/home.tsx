@@ -4,42 +4,37 @@ import Btnplay from "../../components/btnplay/btnplay";
 import Containerfilmes from "../../components/containerfilmes/containerfilmes";
 import Destaquefilme from "../../components/destaquefilme/destaquefilme";
 import Loaderall from "../../components/loaderall/loaderall";
-import { action, forYouFilmes, trendingFilmes } from "../../utils/filmes";
-import { Fragment, useEffect, useState } from "react";
+import { useQuery } from "@apollo/client";
+import { homeQuery } from "./queries";
 
-export interface Filme{
-    title: string
-    year: number
-    img: string
-    description?: string
-}
+
 
 
 export default function Home(){
 
-    const [ isLoad, setLoad ] = useState(true)
+    const { data, loading, error } = useQuery(homeQuery)
+    console.log(data)
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoad(false); 
-        }, 2000);
-    
-        return () => clearTimeout(timer);
-    }, []);
+    if (loading || !data || error) return <Loaderall/>
+
+    const movies = data.movies
+    console.log(movies)    
+
+
+
 
     return  <div className={ 'containter-home' }>
-        { isLoad ?  <Loaderall/> : <Fragment>
-        <Destaquefilme filmes={ trendingFilmes }/>
+
+        <Destaquefilme filmes={ movies }/>
         <Btnplay/>
         
         
         
         <div className={ 'line1' }></div>
 
-        <Containerfilmes filmes={ trendingFilmes } title={ 'Trending' }/>
-        <Containerfilmes filmes={ forYouFilmes } title={ 'For You' }/>
-        <Containerfilmes filmes={ action } title={ 'Action' }/>
-        </Fragment>}
+        <Containerfilmes filmes={ movies } title={ 'Trending' }/>
+        <Containerfilmes filmes={ movies } title={ 'For You' }/>
+        <Containerfilmes filmes={ movies } title={ 'Action' }/>
         
     </div>
 }

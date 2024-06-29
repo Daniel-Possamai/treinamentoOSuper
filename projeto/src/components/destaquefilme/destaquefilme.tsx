@@ -4,11 +4,10 @@ import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import ShareRoundedIcon from '@mui/icons-material/ShareRounded';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import StarRateRoundedIcon from '@mui/icons-material/StarRateRounded';
-import { Filme } from "../../pages/home/home";
 
 
 interface propsFilmeDestacado{
-    filmes: Filme[]
+    filmes: any[]
 }
 
 export default function Destaquefilme(props: propsFilmeDestacado){
@@ -19,7 +18,7 @@ export default function Destaquefilme(props: propsFilmeDestacado){
     return (
         <div className={ 'containerDestaqueFilme' }>
             <div className="filmeDestacado">
-                    <img className={ 'imgDestaque' } src= { filmeAleatorio.img} alt= {`Imagem de capa do filme ${ filmeAleatorio.title }`} />
+                    <img className={ 'imgDestaque' } src= { filmeAleatorio.image.url} alt= {`Imagem de capa do filme ${ filmeAleatorio.title }`} />
                 <div className={ 'infoFilme' }>
                     <h3>{ filmeAleatorio.title }</h3>
                     <p>{ filmeAleatorio.year }</p>
@@ -38,7 +37,7 @@ export default function Destaquefilme(props: propsFilmeDestacado){
             <div className="containerFilmeestaquedesk">
                     <div className="filmeDestak">
                         <div className="imgDestak">
-                            <img src={filmeAleatorio.img} alt={`Imagem de capa do filme ${filmeAleatorio.title}`} />
+                            <img src={filmeAleatorio.image.url} alt={`Imagem de capa do filme ${filmeAleatorio.title}`} />
                             <div className={'btnsFilme'}>
                                 <StarRoundedIcon className={'estrela'} />
                                 <FavoriteIcon className={'coracao'} />

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@apollo/client": "^3.10.6",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.15.18",
@@ -26,11 +27,23 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/client-preset": "^4.3.0",
+    "@graphql-typed-document-node/core": "^3.2.0"
+  },
+  "graphql": {
+    "schema": "http://localhost:5000",
+    "documents": "**/*.{graphql,js,ts,jsx,tsx}"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate": "npm generate:schema && npm generate:types",
+    "generate:schema": "apollo schema:download --endpoint=http://localhost:5000/graphql/ graphql-schema.json",
+    "generate:types": "apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql --no-addTypename --globalTypesFile=src/types/graphql-global-types.ts --outputFlat src/types"
   },
   "eslintConfig": {
     "extends": [

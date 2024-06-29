@@ -5,16 +5,30 @@ import reportWebVitals from './reportWebVitals';
 import { router } from './routes';
 import { RouterProvider } from 'react-router-dom';
 import Header from './components/header/header';
+import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
+const client = new ApolloClient({
+  uri: "http://localhost:5000/graphql",
+  cache: new InMemoryCache(),
+  name: "web-workshop-client",
+  version: "0.1",
+});
+
 root.render(
   <React.StrictMode>
+    <ApolloProvider client={client}>
+
     <Header/>
     <RouterProvider router={router} />
+
+    </ApolloProvider>
   </React.StrictMode>
 );
 

@@ -1,10 +1,9 @@
 import "./containerfilmes.scss"
-import { Filme } from "../../pages/home/home"
 import React, { useState, useEffect } from 'react';
  
 
 interface propsContainerFilmes {
-    filmes: Filme[]
+    filmes: any[]
     title: string
 }
 
